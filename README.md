@@ -6,3 +6,4 @@
 - [强类型与弱类型](./chapter01/lession02/README.md)
 - [静态类型与动态类型](./chapter01/lession03/README.md)
 - [编写你的第一个 TypeScript 程序](./chapter01/lession04/README.md)
+- [基本类型](./chapter01/lession05/README.md)
