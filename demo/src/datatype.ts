@@ -12,7 +12,7 @@ let arr3: Array<number | string> = [1, 2, 'a']
 let tuple: [number, string] = [1, '1']
 
 //
-let add = (x: number, y: number) => x + y
+// let add = (x: number, y: number) => x + y
 let compute: (x: number, y: number) => number
 
 compute = (a, b) => a - b
