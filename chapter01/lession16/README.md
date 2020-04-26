@@ -1,21 +1,12 @@
-// let a = 1
-// let b = ['']
-
-// let c = (x = 1) => x + 1
+# 类型检查机制 — 类型兼容性
 
 
-// interface Foo {
-//   bar: number
-// }
 
-// // let foo = {} as Foo
+当一个类型 Y 可以被赋值给另一个类型 X 时，我们就可以说类型 X 兼容类型 Y
 
-// let foo: Foo = {
-//   bar: 1
-// }
-// foo.bar = 1
+X 兼容 Y： X（目标类型） = Y（源类型）
 
-
+```ts
 // 接口兼容性
 interface X {
   a: any
@@ -126,7 +117,7 @@ class B {
   static s = 1
   constructor(p: number) { }
   id: number = 2
-  private name: string = ''
+  private name: string = ‘’
 }
 
 let aa = new A(1, 2)
@@ -164,4 +155,12 @@ let log2 = <U>(y: U): U => {
 }
 
 log1 = log2
+```
+
+
+Tips
+
+结构之间兼容：成员少的兼容成员多的
+函数之间兼容：参数多的兼容参数少的
+
 
