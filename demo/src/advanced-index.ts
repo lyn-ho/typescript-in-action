@@ -14,17 +14,17 @@ let obj = {
 
 // keyof T
 
-interface Obj {
-  a: number,
-  b: string
-}
+// interface Obj {
+//   a: number,
+//   b: string
+// }
 
-let key: keyof Obj
+// let key: keyof Obj
 
-// T[K]
-let value: Obj['a']
+// // T[K]
+// let value: Obj['a']
 
-// T extends U
+// // T extends U
 
 
 function getValues<T, K extends keyof T>(obj: T, keys: K[]): T[K][] {
