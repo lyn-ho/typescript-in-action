@@ -1,5 +1,4 @@
 # 21 高级类型 — 条件类型
-#typescript/TypeScript开发实战
 
 ```ts
 // T extends U ? X : Y
